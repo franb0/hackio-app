@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import slide0 from "../../multimedia/slide0.png";
+import slide0 from "../../multimedia/slide0.jpg";
 // import slide1 from "../../multimedia/slide1.png";
 import rasp from "../../multimedia/rasp.png";
 import image from "../../multimedia/image.png";

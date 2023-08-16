@@ -124,7 +124,7 @@
   
   @media (max-width: 768px) {
     .presentation {
-      background-image: url('./media/slide0.jpg');
+      background-image: url('../../multimedia/slide0.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
