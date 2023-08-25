@@ -8,18 +8,19 @@ import cursos from "../../multimedia/cursos.png";
 import cart from "../../multimedia/cart.png";
 import attiny from "../../multimedia/attiny.png";
 import antena from "../../multimedia/antena.png";
+import {Link} from "react-router-dom"
 
 export default function Header() {
     return (
         <div>
             <header>
                 <div className="Logo">
-                    <a href="index.html"><img src={image} alt="logo tienda" className="logoImg" /></a>
-                    <a href="index.html" className="hackio">Hackio</a>
+                    <Link to="/"><img src={image} alt="logo tienda" className="logoImg" /></Link>
+                    <Link to="/" className="hackio">Hackio</Link>
                 </div>
                 <nav>
-                    <a href="./templates/login.html" className="Nav-Link">Login</a>
-                    <a href="./templates/cart.html"><img src={cart} alt="Carrito" className="carrito" /></a>
+                    <Link to="/Login" className="Nav-Link">Login</Link>
+                    <Link to="/cart"><img src={cart} alt="Carrito" className="carrito" /></Link>
                 </nav>
             </header>
             <div className="presentation">

@@ -1,19 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/header';
 import Cart from "./components/cart/cart";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./components/footer/footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route path='/'>
+        <Routes>
+          <Route path='/' element={<>
             <Header />
             <Cart />
+            <Footer />
+          </>}>
           </Route>
-        </Switch>
+
+          <Route path='/cart' element={<>
+            <Header />
+          </>}>
+            
+          </Route>
+
+
+        </Routes>
       </Router>
     </div>
   );
