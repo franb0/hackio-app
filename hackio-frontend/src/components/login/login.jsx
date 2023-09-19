@@ -1,27 +1,11 @@
 import React from 'react';
-import './header.css';
-import slide0 from "../../multimedia/slide0.jpg";
-// import slide1 from "../../multimedia/slide1.png";
-import rasp from "../../multimedia/rasp.png";
-import image from "../../multimedia/image.png";
-import cursos from "../../multimedia/cursos.png";
-import cart from "../../multimedia/cart.png";
-import attiny from "../../multimedia/attiny.png";
-import antena from "../../multimedia/antena.png";
+import './login.css';
+import {Link} from "react-router-dom"
 
 export default function Login() {
     return (
         <div>
-            <header>
-                <a href="/index.html" className="Logo">
-                    <img src="/media/image.png" alt="logo tienda" className="logoImg" />
-                    <h2 className="MyPage">Hackio</h2>
-                </a>
-
-                <nav>
-                    <a href="/index.html" className="Nav-Link">HOME</a>
-                </nav>
-            </header>
+           
 
             <div className="login-box">
                 <form action="action_page.php" method="post">

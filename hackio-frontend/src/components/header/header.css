@@ -18,8 +18,14 @@
   }
   
   nav {
-    align-self: center; /* Align the nav to the center vertically */
-    justify-self: end; /* Align the nav to the center horizontally */
+    /* align-self: center; /* Align the nav to the center vertically */
+    /* align-items: center; */ 
+
+    justify-self: start; /* Align the logo to the left */
+    display: grid;
+    grid-template-columns: auto auto; /* Adjusted grid-template-columns */
+    align-items: center; /* Vertically center the logo and title */
+    
   }
   
   .Logo {
@@ -36,6 +42,18 @@
     /* pixeles o rem es mejor */
   }
   
+  img.carrito {
+
+
+    justify-self: center; /* Align the logo to the left */
+    display: grid;
+    grid-template-columns: auto auto; /* Adjusted grid-template-columns */
+    align-items: center; /* Vertically center the logo and title */
+
+    /* grid-column-start: 4;
+    grid-column-end: 5; */
+  }
+
   
   
   /* Media query for mobile devices */
@@ -97,6 +115,12 @@
     max-height: 35px;
     padding: 1rem;
     padding-bottom: 0rem;
+
+    justify-self: start; /* Align the logo to the left */
+    display: grid;
+    grid-template-columns: auto auto; /* Adjusted grid-template-columns */
+    align-items: center; /* Vertically center the logo and title */
+
     /* grid-column-start: 4;
     grid-column-end: 5; */
   }
