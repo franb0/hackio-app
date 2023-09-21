@@ -25,15 +25,9 @@ function App() {
         <Routes>
           <Route path='/' element={<>
             <Header />
-      <Slide />
-      <Products />
-      <Footer />
-
-      {/* Button to open the login modal */}
-      <button onClick={openLoginModal}>Login</button>
-
-      {/* Render the login modal */}
-      {showLoginModal && <LoginModal onClose={closeLoginModal} />}
+            <Slide />
+            <Products />
+            <Footer />
           </>}>
           </Route>
 
