@@ -1,5 +1,6 @@
 import React from 'react';
 import './LoginModal.css'; // Create a CSS file for modal styles
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 export default function LoginModal({ onClose }) {
     const handleCancelClick = () => {
@@ -35,7 +36,9 @@ export default function LoginModal({ onClose }) {
                                 Cancel
                             </button>
                             <span className="psw">
-                                {/* Use a button or handle the action in another way */}
+                                <Link to="/register">Create an Account</Link> {/* Add the Create Account Link */}
+                            </span>
+                            <span className="psw">
                                 <button onClick={() => { /* Handle Forgot Password action here */ }}>
                                     Forgot password?
                                 </button>

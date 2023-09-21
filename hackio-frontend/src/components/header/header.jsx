@@ -3,7 +3,8 @@ import './header.css';
 import image from "../../multimedia/image.png";
 import cart from "../../multimedia/cart.png";
 import { Link } from "react-router-dom";
-import LoginModal from '../LoginModal/LoginModal';
+import LoginModal from '../LoginModal/LoginModal'; // Check the file path
+
 
 export default function Header() {
   // Create state to manage the login modal
@@ -32,7 +33,7 @@ export default function Header() {
         </div>
         <nav>
           {/* Use onClick to open the login modal */}
-          <Link to="#" className="Nav-Link" onClick={openLoginModal}>
+          <Link to="/" className="Nav-Link" onClick={openLoginModal}>
             Login
           </Link>
           <Link to="/cart">

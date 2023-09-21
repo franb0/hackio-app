@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './components/header/header';
 import Cart from "./components/cart/cart";
+import Register from "./components/register/register";
 import Footer from "./components/footer/footer";
 // import Login from "./components/login/login";
 import Slide from "./components/slide/slide";
@@ -31,6 +32,13 @@ function App() {
           </>}>
           </Route>
 
+          <Route path='/register' element={<>
+            <Header />
+            <Register />
+            <Footer />
+          </>}>
+          </Route>
+
           <Route path='/cart' element={<>
             <Header />
             <Cart />
@@ -46,6 +54,31 @@ function App() {
           </>}>
 
           </Route>
+
+          <Route path='/hotplug' element={<>
+            <Header />
+            <Footer />
+          </>}>
+          </Route>
+
+          <Route path='/wireless' element={<>
+            <Header />
+            <Footer />
+          </>}>
+          </Route>
+
+          <Route path='/micropc' element={<>
+            <Header />
+            <Footer />
+          </>}>
+          </Route>
+
+          <Route path='/courses' element={<>
+            <Header />
+            <Footer />
+          </>}>
+          </Route>
+
         </Routes>
       </Router>
 
