@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './cart.css';
 export default function Cart() {
     const [cartItems, setCartItems] = useState([]);
 

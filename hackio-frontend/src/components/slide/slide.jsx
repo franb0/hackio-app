@@ -1,7 +1,6 @@
 import React from 'react';
 import './slide.css';
 import slide0 from "../../multimedia/slide0.jpg";
-// import slide1 from "../../multimedia/slide1.png";
 
 
 export default function Slide() {
